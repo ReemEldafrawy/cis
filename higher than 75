@@ -1,0 +1,11 @@
+//in oracel
+select name
+from students 
+where marks >75 
+order by substr(name,-3) ,id;
+
+//or in mysql 
+select name 
+from students 
+where marks> 75
+order by right (name,3),id;
